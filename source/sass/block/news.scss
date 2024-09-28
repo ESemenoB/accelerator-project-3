@@ -1,0 +1,599 @@
+.news-wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.news-titel {
+  color: #316dc2;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.news-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  li {
+    border: 1px solid #f0efe9;
+    border-radius: 20px;
+    padding: 16px 35px;
+    color: rgb(49, 109, 194, 0.6);
+    cursor: pointer;
+  }
+
+  li:hover {
+    color: rgb(49, 109, 194);
+    border: 1px solid #f0efe9;
+  }
+
+  li:focus-visible {
+    color: rgb(49, 109, 194);
+    border: 1px solid #316dc2;
+    background-color: #ffffff;
+  }
+  ._current {
+    border: 2px solid #316dc2;
+    border-radius: 20px;
+    // padding: 16px 35px;
+    color: rgb(49, 109, 194, 0.6);
+  }
+}
+
+.news-slider {
+  margin: 40px 0;
+}
+
+.news-slider_item {
+  color: #316dc2;
+  width: 286px;
+  height: 400px;
+  align-content: end;
+  border-radius: 12px;
+  time {
+    position: relative;
+    padding: 12px 12px 6px 0;
+    border-radius: 0 12px 0 0;
+    background-color: #f0efe9;
+  }
+
+  time::after {
+    content: "";
+    background-image: url(../../img/sprite/angle3.svg);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -16px;
+    left: 0px;
+  }
+
+  time::before {
+    content: "";
+    background-image: url(../../img/sprite/angle3.svg);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -16px;
+  }
+
+  h6 {
+    width: 172px;
+    padding: 18px 18px 6px 0px;
+    border-radius: 0px 12px 0px 0px;
+    background-color: #f0efe9;
+    position: relative;
+  }
+
+  h6:after {
+    content: "";
+    background-image: url(../../img/sprite/angle3.svg);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -16px;
+    bottom: 0px;
+  }
+
+  a {
+    width: 222px;
+    display: flex;
+    background-color: #f0efe9;
+    border-radius: 0px 12px 0px 12px;
+    padding: 12px 18px 15px 0px;
+    position: relative;
+    p {
+      margin: 0;
+      color: #484848;
+      font-family: "Manrope-Regular", "sans-serif";
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+      padding: 6px;
+      --background-color: #316dc2;
+      --arrow-color: #ffffff;
+    }
+  }
+
+  a::after {
+    content: "";
+    background-image: url(../../img/sprite/angle3.svg);
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: -16px;
+    bottom: 0px;
+  }
+
+  a:hover {
+    svg {
+      rotate: 45deg;
+      --background-color: #ffffff;
+      --arrow-color: #316dc2;
+    }
+  }
+
+  a:active {
+    svg {
+      rotate: 45deg;
+      --background-color: #ffffff;
+      --arrow-color: #316dc2b3;
+    }
+  }
+}
+
+// .item_big {
+//   width: 604px;
+//   height: 400px;
+
+//   h6 {
+//     width: 408px;
+//   }
+
+//   a {
+//     width: 450px;
+//   }
+// }
+
+.interview {
+  background-image: image-set(
+    "/img/interview-desctop-big@x1.webp" 1x,
+    "/img/interview-desctop-big@x1.webp" 2x
+  );
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 604px;
+  height: 400px;
+
+  h6 {
+    width: 408px;
+  }
+
+  a {
+    width: 450px;
+  }
+}
+
+.travel {
+  background-image: image-set(
+    "/img/travel-desctop@x1.webp" 1x,
+    "/img/travel-desctop@x2.webp" 2x
+  );
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.volunteer {
+  background-image: image-set(
+    "/img/volunteer-desctop@x1.webp" 1x,
+    "/img/volunteer-desctop@x2.webp" 2x
+  );
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.career {
+  background-image: image-set(
+    "/img/career-desctop@x1.webp" 1x,
+    "/img/career-desctop@x2.webp" 2x
+  );
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@include respond-to("tablet") {
+  .news-wrapper {
+    width: 678px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  .news-titel {
+    color: #316dc2;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .news-list {
+    // display: flex;
+    // justify-content: center;
+    // margin: 0 auto;
+
+    li {
+      border: 1px solid #f0efe9;
+      border-radius: 20px;
+      padding: 16px 22px;
+      color: rgb(49, 109, 194, 0.6);
+      cursor: pointer;
+    }
+
+    // li:hover {
+    //   color: rgb(49, 109, 194);
+    //   border: 1px solid #f0efe9;
+    // }
+
+    // li:focus-visible {
+    //   color: rgb(49, 109, 194);
+    //   border: 1px solid #316dc2;
+    //   background-color: #ffffff;
+    // }
+    ._current {
+      border: 2px solid #316dc2;
+      border-radius: 20px;
+      // padding: 16px 22px;
+      color: rgb(49, 109, 194, 0.6);
+    }
+  }
+
+  .news-slider {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .news-slider_item {
+    color: #316dc2;
+    width: 324px;
+    height: 350px;
+    align-content: end;
+    border-radius: 12px;
+    time {
+      position: relative;
+      padding: 12px 12px 1px 0;
+      border-radius: 0 12px 0 0;
+      background-color: #f0efe9;
+    }
+
+    time::after {
+      content: "";
+      background-image: url(../../img/sprite/angle3.svg);
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: -16px;
+      left: 0px;
+    }
+
+    time::before {
+      content: "";
+      background-image: url(../../img/sprite/angle3.svg);
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -16px;
+      bottom: 0;
+    }
+
+    h6 {
+      width: 189px;
+      padding: 10px 18px 6px 0px;
+      border-radius: 0px 12px 0px 0px;
+      background-color: #f0efe9;
+      position: relative;
+    }
+
+    h6:after {
+      content: "";
+      background-image: url(../../img/sprite/angle3.svg);
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -16px;
+      bottom: 0px;
+    }
+
+    a {
+      width: 222px;
+      display: flex;
+      background-color: #f0efe9;
+      border-radius: 0px 12px 0px 12px;
+      padding: 12px 18px 15px 0px;
+      position: relative;
+      p {
+        // margin: 0;
+        // color: #484848;
+        // font-family: "Manrope-Regular", "sans-serif";
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+        padding: 6px;
+        --background-color: #316dc2;
+        --arrow-color: #ffffff;
+      }
+    }
+
+    a::after {
+      content: "";
+      background-image: url(../../img/sprite/angle3.svg);
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -16px;
+      bottom: 0px;
+    }
+
+    a:hover {
+      svg {
+        rotate: 45deg;
+        --background-color: #ffffff;
+        --arrow-color: #316dc2;
+      }
+    }
+
+    a:active {
+      svg {
+        rotate: 45deg;
+        --background-color: #ffffff;
+        --arrow-color: #316dc2b3;
+      }
+    }
+  }
+
+  // .item_big {
+  //   width: 604px;
+  //   height: 400px;
+
+  //   h6 {
+  //     width: 408px;
+  //   }
+
+  //   a {
+  //     width: 450px;
+  //   }
+  // }
+
+  .interview {
+    background-image: image-set(
+      "/img/interview-desctop@x1.webp" 1x,
+      "/img/interview-desctop@x2.webp" 2x
+    );
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  // .travel {
+  //   background-image: image-set(
+  //     "/img/travel-desctop@x1.webp" 1x,
+  //     "/img/travel-desctop@x2.webp" 2x
+  //   );
+  //   background-size: cover;
+  //   background-position: 50% 50%;
+  // }
+
+  // .volunteer {
+  //   background-image: image-set(
+  //     "/img/volunteer-desctop@x1.webp" 1x,
+  //     "/img/volunteer-desctop@x2.webp" 2x
+  //   );
+  //   background-size: cover;
+  //   background-position: 50% 50%;
+  // }
+}
+
+@include respond-to("mobile") {
+  .news-wrapper {
+    width: 290px;
+    margin: 0 auto;
+    padding: 51px 0 50px;
+  }
+
+  .news-titel {
+    color: #316dc2;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+  .news-list {
+    // display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow: hidden;
+    // margin: 0 auto;
+
+    li {
+      border: 2px solid #f0efe9;
+      border-radius: 20px;
+      padding: 10px 14px 11px 14px;
+      color: rgb(49, 109, 194, 0.6);
+      cursor: pointer;
+    }
+
+    // li:hover {
+    //   color: rgb(49, 109, 194);
+    //   border: 1px solid #f0efe9;
+    // }
+
+    // li:focus-visible {
+    //   color: rgb(49, 109, 194);
+    //   border: 1px solid #316dc2;
+    //   background-color: #ffffff;
+    // }
+    ._current {
+      border: 2px solid #316dc2;
+      border-radius: 20px;
+      // padding: 10px 14px 11px 14px;
+      color: rgb(49, 109, 194, 0.6);
+    }
+  }
+
+  .news-slider {
+    margin: 24px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+    row-gap: 19px;
+    column-gap: 0;
+  }
+
+  .news-slider_item {
+    color: #316dc2;
+    width: 290px;
+    height: 240px;
+    align-content: flex-end; // border-radius: 12px;
+    time {
+      position: relative;
+      padding: 12px 12px 6px 0;
+      // border-radius: 0 12px 0 0;
+      // background-color: #f0efe9;
+    }
+
+    time::after {
+      content: "";
+      background-image: url(../../img/sprite/angle3.svg);
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: -16px;
+      left: 0px;
+    }
+
+    time::before {
+      content: "";
+      background-image: url(../../img/sprite/angle3.svg);
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -16px;
+      bottom: 0;
+    }
+
+    h6 {
+      width: 189px;
+      padding: 10px 18px 6px 0px;
+      border-radius: 0px 12px 0px 0px;
+      background-color: #f0efe9;
+      position: relative;
+    }
+
+    h6:after {
+      content: "";
+      background-image: url(../../img/sprite/angle3.svg);
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -16px;
+      bottom: 0px;
+    }
+
+    a {
+      width: 259px;
+      display: flex;
+      align-items: center;
+      background-color: #f0efe9;
+      border-radius: 0px 12px 0px 12px;
+      padding: 10px 3px 6px 0px;
+      position: relative;
+      p {
+        // margin: 0;
+        // color: #484848;
+        // font-family: "Manrope-Regular", "sans-serif";
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+        padding: 0 6px;
+        --background-color: #316dc2;
+        --arrow-color: #ffffff;
+      }
+    }
+
+    a::after {
+      content: "";
+      background-image: url(../../img/sprite/angle3.svg);
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -16px;
+      bottom: 0px;
+    }
+
+    a:hover {
+      svg {
+        rotate: 45deg;
+        --background-color: #ffffff;
+        --arrow-color: #316dc2;
+      }
+    }
+
+    a:active {
+      svg {
+        rotate: 45deg;
+        --background-color: #ffffff;
+        --arrow-color: #316dc2b3;
+      }
+    }
+  }
+
+  .item_big {
+    width: 290px;
+    height: 330px;
+
+    h6 {
+      width: 182px;
+    }
+
+    a {
+      padding: 12px 3px 10px 0px;
+    }
+  }
+
+  .interview {
+    background-image: image-set(
+      "/img/interview-desctop@x1.webp" 1x,
+      "/img/interview-desctop@x2.webp" 2x
+    );
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  // .travel {
+  //   background-image: image-set(
+  //     "/img/travel-desctop@x1.webp" 1x,
+  //     "/img/travel-desctop@x2.webp" 2x
+  //   );
+  //   background-size: cover;
+  //   background-position: 50% 50%;
+  // }
+
+  // .volunteer {
+  //   background-image: image-set(
+  //     "/img/volunteer-desctop@x1.webp" 1x,
+  //     "/img/volunteer-desctop@x2.webp" 2x
+  //   );
+  //   background-size: cover;
+  //   background-position: 50% 50%;
+  // }
+  .news-pagination {
+    width: 100%;
+    height: 26px;
+  }
+}

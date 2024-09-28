@@ -1,0 +1,157 @@
+.contacts {
+  background-color: #316dc2;
+  color: #ffffff;
+}
+
+.contacts-wrapper {
+  width: 1240px;
+  padding: 120px 0;
+  margin: 0 auto;
+}
+
+.contacts-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+
+  .contacts-info {
+    display: flex;
+    gap: 52.5px;
+
+    .info-item_address {
+      width: 263px;
+    }
+
+    .info-item_tell {
+      width: 132px;
+    }
+
+    .info-item_maill {
+      width: 104px;
+    }
+    .info-item_titel {
+      color: #f0efe9;
+      opacity: 80%;
+      margin-bottom: 24px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.contacts-map {
+  margin-top: 40px;
+}
+
+@include respond-to("tablet") {
+  .contacts-wrapper {
+    width: 678px;
+    padding: 100px 0;
+    margin: 0 auto;
+  }
+
+  .contacts-content {
+    display: block;
+    // justify-content: space-between;
+    // align-items: center;
+    padding-bottom: 30px;
+    // border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    h2 {
+      margin-bottom: 30px;
+    }
+    .contacts-info {
+      display: flex;
+      gap: 0;
+      justify-content: space-between;
+
+      .info-item_address {
+        width: 401px;
+      }
+
+      .info-item_tell {
+        width: 132px;
+      }
+
+      .info-item_maill {
+        width: 104px;
+      }
+      .info-item_titel {
+        color: #f0efe9;
+        opacity: 80%;
+        margin-bottom: 24px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .contacts-map {
+    margin-top: 30px;
+
+    // img {
+    //   width: 678px;
+    //   height: 500px;
+    //   object-fit: cover;
+    //   border-radius: 16px;
+    // }
+  }
+}
+
+@include respond-to("mobile") {
+  .contacts-wrapper {
+    width: 290px;
+    padding: 75px 0;
+    margin: 0 auto;
+  }
+
+  .contacts-content {
+    display: block;
+    // justify-content: space-between;
+    // align-items: center;
+    padding-bottom: 30px;
+    // border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    h2 {
+      margin-bottom: 30px;
+    }
+    .contacts-info {
+      display: block;
+      gap: 0;
+      justify-content: space-between;
+
+      .info-item_address {
+        width: 230px;
+      }
+
+      .info-item_tell {
+        width: 132px;
+      }
+
+      .info-item_maill {
+        width: 104px;
+      }
+      .info-item_titel {
+        color: #f0efe9;
+        opacity: 80%;
+        margin-bottom: 24px;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .contacts-map {
+    margin-top: 30px;
+
+    // img {
+    //   width: 678px;
+    //   height: 500px;
+    //   object-fit: cover;
+    //   border-radius: 16px;
+    // }
+  }
+}

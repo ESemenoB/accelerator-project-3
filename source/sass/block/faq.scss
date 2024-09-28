@@ -1,0 +1,338 @@
+.faq-wrapper {
+  width: 1028px;
+  margin: 0 auto;
+  padding: 60px 0 50px;
+
+  h2 {
+    text-align: center;
+    color: #316dc2;
+  }
+}
+.faq-accordeon {
+  margin-top: 60px;
+  // display: flex;
+  // flex-direction: column;
+  // // margin-top: 30px;
+  // gap: 10px;
+}
+
+.accordeon-item {
+  border: 2px solid #316dc2;
+  border-radius: 16px;
+  padding: 42px;
+  cursor: pointer;
+  position: relative;
+  // margin-bottom: 10px;
+  h4 {
+    margin: 0;
+    width: 894px;
+    color: #316dc2;
+  }
+  svg {
+    background-color: #316dc2;
+    border-radius: 50%;
+    // position: absolute;
+    cursor: pointer;
+    top: 42px;
+    right: 42px;
+    width: 40px;
+    height: 40px;
+    --accordion-border: #316dc2;
+    --vertical-line: #ffffff;
+    --horizon-line: #ffffff;
+  }
+
+  p {
+    width: 914px;
+    color: #ffffff;
+    margin-top: 20px;
+    display: none;
+    overflow: hidden;
+    font-family: "Manrope-Regular", "sans-serif";
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.accordeon-item:hover {
+  background-color: #ffffff;
+  svg {
+    background-color: #ffffff;
+    --accordion-border: #316dc2;
+    --vertical-line: #316dc2;
+    --horizon-line: #316dc2;
+  }
+}
+
+.accordeon-item:active {
+  background-color: #ffffff;
+  svg {
+    background-color: #275699;
+    --accordion-border: #275699;
+    --vertical-line: #ffffff;
+    --horizon-line: #ffffff;
+  }
+}
+
+.accordeon-item.active {
+  background-color: #316dc2;
+  border: 2px solid #316dc2;
+  h4 {
+    color: #ffffff;
+  }
+  p {
+    display: block;
+    margin: 19px 0 2px;
+  }
+
+  svg {
+    background-color: #ffffff;
+    --accordion-border: #ffffff;
+    --vertical-line: none;
+    --horizon-line: #316dc2;
+  }
+}
+
+.accordeon-item:hover.active {
+  svg {
+    background-color: #316dc2;
+    --accordion-border: #ffffff;
+    --vertical-line: none;
+    --horizon-line: #ffffff;
+  }
+}
+
+.accordeon-item:active.active {
+  background-color: #275699;
+  svg {
+    background-color: #ffffff;
+    --accordion-border: #ffffff;
+    --vertical-line: none;
+    --horizon-line: #275699;
+  }
+}
+
+@include respond-to("tablet") {
+  .faq-wrapper {
+    width: 678px;
+    margin: 0 auto;
+    padding: 60px 0 50px;
+
+    h2 {
+      text-align: center;
+      color: #316dc2;
+    }
+  }
+  .faq-accordeon {
+    margin-top: 40px;
+  }
+
+  .accordeon-item {
+    // border: 2px solid #316dc2;
+    // border-radius: 16px;
+    padding: 32px;
+    // cursor: pointer;
+    // position: relative;
+    // margin-bottom: 10px;
+    h4 {
+      // margin: 0;
+      width: 564px;
+      // color: #316dc2;
+    }
+    svg {
+      // background-color: #316dc2;
+      // border-radius: 50%;
+      // position: absolute;
+      // cursor: pointer;
+      top: 32px;
+      right: 25px;
+      // width: 40px;
+      // height: 40px;
+      // --accordion-border: #316dc2;
+      // --vertical-line: #ffffff;
+      // --horizon-line: #ffffff;
+    }
+
+    p {
+      width: 614px;
+      // color: #ffffff;
+      // margin-top: 20px;
+      // display: none;
+      // overflow: hidden;
+      // font-family: "Manrope-Regular", "sans-serif";
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  // .accordeon-item:hover {
+  //   background-color: #ffffff;
+  //   svg {
+  //     background-color: #ffffff;
+  //     --accordion-border: #316dc2;
+  //     --vertical-line: #316dc2;
+  //     --horizon-line: #316dc2;
+  //   }
+  // }
+
+  // .accordeon-item:active {
+  //   background-color: #ffffff;
+  //   svg {
+  //     background-color: #275699;
+  //     --accordion-border: #275699;
+  //     --vertical-line: #ffffff;
+  //     --horizon-line: #ffffff;
+  //   }
+  // }
+
+  // .accordeon-item.active {
+  //   background-color: #316dc2;
+  //   h4 {
+  //     color: #ffffff;
+  //   }
+  //   p {
+  //     display: block;
+  //   }
+
+  //   svg {
+  //     background-color: #ffffff;
+  //     --accordion-border: #ffffff;
+  //     --vertical-line: none;
+  //     --horizon-line: #316dc2;
+  //   }
+  // }
+
+  // .accordeon-item:hover.active {
+  //   svg {
+  //     background-color: #316dc2;
+  //     --accordion-border: #ffffff;
+  //     --vertical-line: none;
+  //     --horizon-line: #ffffff;
+  //   }
+  // }
+
+  // .accordeon-item:active.active {
+  //   background-color: #275699;
+  //   svg {
+  //     background-color: #ffffff;
+  //     --accordion-border: #ffffff;
+  //     --vertical-line: none;
+  //     --horizon-line: #275699;
+  //   }
+  // }
+}
+
+@include respond-to("mobile") {
+  .faq-wrapper {
+    width: 290px;
+    margin: 0 auto;
+    padding: 51px 0 55px;
+
+    h2 {
+      text-align: center;
+      color: #316dc2;
+    }
+  }
+  .faq-accordeon {
+    margin-top: 30px;
+  }
+
+  .accordeon-item {
+    // border: 2px solid #316dc2;
+    // border-radius: 16px;
+    padding: 17px 17px 18px 15px;
+    // cursor: pointer;
+    // position: relative;
+    margin-bottom: 10px;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h4 {
+      // margin: 0;
+      width: 200px;
+      // color: #316dc2;
+    }
+    svg {
+      // background-color: #316dc2;
+      // border-radius: 50%;
+      // position: absolute;
+      // cursor: pointer;
+      top: 20px;
+      right: 15px;
+      // width: 40px;
+      // height: 40px;
+      // --accordion-border: #316dc2;
+      // --vertical-line: #ffffff;
+      // --horizon-line: #ffffff;
+    }
+
+    p {
+      width: 250px;
+      // color: #ffffff;
+      margin: 22px 0 -2px;
+      // display: none;
+      // overflow: hidden;
+      // font-family: "Manrope-Regular", "sans-serif";
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  // .accordeon-item:hover {
+  //   background-color: #ffffff;
+  //   svg {
+  //     background-color: #ffffff;
+  //     --accordion-border: #316dc2;
+  //     --vertical-line: #316dc2;
+  //     --horizon-line: #316dc2;
+  //   }
+  // }
+
+  // .accordeon-item:active {
+  //   background-color: #ffffff;
+  //   svg {
+  //     background-color: #275699;
+  //     --accordion-border: #275699;
+  //     --vertical-line: #ffffff;
+  //     --horizon-line: #ffffff;
+  //   }
+  // }
+
+  // .accordeon-item.active {
+  //   background-color: #316dc2;
+  //   h4 {
+  //     color: #ffffff;
+  //   }
+  //   p {
+  //     display: block;
+  //   }
+
+  //   svg {
+  //     background-color: #ffffff;
+  //     --accordion-border: #ffffff;
+  //     --vertical-line: none;
+  //     --horizon-line: #316dc2;
+  //   }
+  // }
+
+  // .accordeon-item:hover.active {
+  //   svg {
+  //     background-color: #316dc2;
+  //     --accordion-border: #ffffff;
+  //     --vertical-line: none;
+  //     --horizon-line: #ffffff;
+  //   }
+  // }
+
+  // .accordeon-item:active.active {
+  //   background-color: #275699;
+  //   svg {
+  //     background-color: #ffffff;
+  //     --accordion-border: #ffffff;
+  //     --vertical-line: none;
+  //     --horizon-line: #275699;
+  //   }
+  // }
+}

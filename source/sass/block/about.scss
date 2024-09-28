@@ -1,0 +1,364 @@
+.about-wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 60px 0;
+  h2,
+  h3 {
+    color: #316dc2;
+  }
+  .about-conteiner {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+.about-trainee {
+  width: 702px;
+  p {
+    font-family: "Manrope-Regular", "sans-serif";
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+.about-target {
+  width: 493px;
+  p {
+    font-family: "Manrope-Regular", "sans-serif";
+    font-size: 16px;
+    line-height: 26px;
+    margin: 30px 0 40px;
+  }
+
+  .about-link {
+    width: 277px;
+    p {
+      font-family: "Manrope-Medium", "sans-serif";
+      font-size: 14px;
+      line-height: 1;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+}
+
+.about-advantages {
+  background-color: #316dc2;
+  border-radius: 32px;
+  padding: 72px 100px 50px 120px;
+  color: #ffffff;
+  margin-top: 60px;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 52px;
+    row-gap: 54px;
+  }
+
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #f0efe9;
+    padding: 31px 41px 31px 41px;
+    h5 {
+      letter-spacing: 0.26px;
+      width: 50%;
+    }
+    p {
+      font-family: "Manrope-Light", "sans-serif";
+      font-size: 16px;
+      line-height: 20px;
+      color: #f0efe9;
+      margin: 0;
+      width: 201px;
+    }
+  }
+  li::before {
+    background-image: url(../../img/sprite/icon-star.svg);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: -24px;
+    left: -21px;
+    // z-index: 1;
+    // transform: rotate(0deg);
+  }
+  li:nth-child(1) {
+    h5 {
+      width: 144px;
+    }
+    gap: 57px;
+  }
+  li:nth-child(2) {
+    h5 {
+      width: 171px;
+    }
+    gap: 30px;
+  }
+  li:nth-child(3) {
+    h5 {
+      width: 164px;
+    }
+    gap: 39px;
+  }
+  li:nth-child(4) {
+    h5 {
+      width: 136px;
+    }
+    gap: 67px;
+  }
+}
+
+@include respond-to("tablet") {
+  .about-wrapper {
+    width: 678px;
+    // margin: 0 auto;
+    padding: 50px 0;
+    h2,
+    h3 {
+      color: #316dc2;
+    }
+    .about-conteiner {
+      display: block;
+      // gap: 40px;
+    }
+  }
+
+  .about-trainee {
+    width: 638px;
+    p {
+      font-family: "Manrope-Regular", "sans-serif";
+      font-size: 20px;
+      line-height: 26px;
+      margin: 30px 0 40px;
+    }
+  }
+
+  .about-target {
+    // width: 493px;
+    p {
+      font-family: "Manrope-Regular", "sans-serif";
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .about-link {
+      // width: 277px;
+      p {
+        font-family: "Manrope-Medium", "sans-serif";
+        font-size: 14px;
+        line-height: 1;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+  }
+
+  .about-advantages {
+    // background-color: #316dc2;
+    // border-radius: 32px;
+    padding: 72px 50px 50px 70px;
+    color: #ffffff;
+    // margin-top: 60px;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 52px;
+      row-gap: 54px;
+    }
+
+    li {
+      // position: relative;
+      display: block;
+      // align-items: center;
+      width: 209px;
+      // border-radius: 10px;
+      // border: 1px solid #f0efe9;
+      padding: 16px 21px;
+      // h5 {
+      //   letter-spacing: 0.26px;
+      //   width: 50%;
+      // }
+      // p {
+      //   font-family: "Manrope-Light", "sans-serif";
+      //   font-size: 16px;
+      //   line-height: 20px;
+      //   color: #f0efe9;
+      //   margin: 0;
+      //   width: 201px;
+      // }
+    }
+    // li::before {
+    //   background-image: url(../../img/sprite/icon-star.svg);
+    //   background-repeat: no-repeat;
+    //   content: "";
+    //   position: absolute;
+    //   width: 42px;
+    //   height: 42px;
+    //   top: -24px;
+    //   left: -21px;
+    //   // z-index: 1;
+    //   // transform: rotate(0deg);
+    // }
+    // li:nth-child(1) {
+    //   h5 {
+    //     width: 144px;
+    //   }
+    //   gap: 57px;
+    // }
+    // li:nth-child(2) {
+    //   h5 {
+    //     width: 171px;
+    //   }
+    //   gap: 30px;
+    // }
+    // li:nth-child(3) {
+    //   h5 {
+    //     width: 164px;
+    //   }
+    //   gap: 39px;
+    // }
+    // li:nth-child(4) {
+    //   h5 {
+    //     width: 136px;
+    //   }
+    //   gap: 67px;
+    // }
+  }
+}
+
+@include respond-to("mobile") {
+  .about-wrapper {
+    width: 290px;
+    // margin: 0 auto;
+    padding: 50px 0;
+    h2,
+    h3 {
+      color: #316dc2;
+    }
+    .about-conteiner {
+      display: block;
+      // gap: 40px;
+    }
+  }
+
+  .about-trainee {
+    width: 290px;
+    p {
+      font-family: "Manrope-Regular", "sans-serif";
+      font-size: 16px;
+      line-height: 22px;
+      margin: 15px 0 40px;
+    }
+  }
+
+  .about-target {
+    width: 290px;
+    p {
+      font-family: "Manrope-Regular", "sans-serif";
+      font-size: 14px;
+      line-height: 20px;
+      margin: 20px 0 30px;
+    }
+
+    .about-link {
+      width: 221px;
+      height: 42px;
+      p {
+        padding: 16px 14px 16px 21px;
+        font-family: "Manrope-Medium", "sans-serif";
+        font-size: 12px;
+        line-height: 1;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 0.024em;
+      }
+      svg {
+        width: 34px;
+        height: 34px;
+      }
+    }
+  }
+
+  .about-advantages {
+    // background-color: #316dc2;
+    border-radius: 20px;
+    padding: 42px 20px 40px 20px;
+    color: #ffffff;
+    margin-top: 40px;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 52px;
+      row-gap: 22px;
+    }
+
+    // 20px, 20px, 40px, 0px
+    li {
+      // position: relative;
+      display: block;
+      // align-items: center;
+      width: 209px;
+      border-radius: 16px;
+      // border: 1px solid #f0efe9;
+      padding: 15px 21px 16px 20px; // h5 {
+      //   letter-spacing: 0.26px;
+      //   width: 50%;
+      // }
+      p {
+        font-family: "Manrope-Light", "sans-serif";
+        font-size: 14px;
+        line-height: 20px;
+        // color: #f0efe9;
+        margin: 14px 0px 0px 0px;
+        width: 201px;
+      }
+    }
+    // li::before {
+    //   background-image: url(../../img/sprite/icon-star.svg);
+    //   background-repeat: no-repeat;
+    //   content: "";
+    //   position: absolute;
+    //   width: 42px;
+    //   height: 42px;
+    //   top: -24px;
+    //   left: -21px;
+    //   // z-index: 1;
+    //   // transform: rotate(0deg);
+    // }
+    li:nth-child(1) {
+      h5 {
+        width: 178px;
+      }
+      // gap: 57px;
+    }
+    li:nth-child(2) {
+      h5 {
+        width: 204px;
+      }
+      // gap: 30px;
+    }
+    li:nth-child(3) {
+      h5 {
+        width: 204px;
+      }
+      // gap: 39px;
+    }
+    li:nth-child(4) {
+      h5 {
+        width: 166px;
+      }
+      p {
+        width: 206px;
+      }
+      // gap: 67px;
+    }
+  }
+}

@@ -1,0 +1,241 @@
+.grant {
+  background-color: #316dc2;
+}
+
+.grand-wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 120px 0 120px;
+  color: #ffffff;
+  display: flex;
+  gap: 138px;
+}
+
+.grand-pass {
+  width: 498px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: "Manrope-Regular", "sans-serif";
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+}
+
+.grand-receive {
+  h3 {
+    margin-bottom: 45px;
+  }
+  .receive-list {
+    font-family: "Manrope-Regular", "sans-serif";
+    font-size: 16px;
+    line-height: 26px;
+    // padding-left: 33px;
+    padding: 0;
+    margin: 0;
+    color: #f0efe9;
+
+    .receive-item {
+      width: 478px;
+      padding: 31px 26px 31px 26px;
+      border: 1px solid #f0efe9;
+      border-radius: 10px;
+      margin-left: 20px;
+      margin-bottom: 23px;
+    }
+
+    .receive-item:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.custom-counter {
+  counter-reset: my-counter; /* Сброс счётчика */
+  //   list-style-type: none; /* Убираем стандартные маркеры */
+}
+
+.custom-counter li {
+  counter-increment: my-counter; /* Увеличиваем счётчик для каждого элемента списка */
+  position: relative;
+}
+
+.custom-counter li::before {
+  content: counter(my-counter) " "; /* Отображаем номер без точки */
+  font-weight: bold;
+  font-size: 22px;
+  position: absolute;
+  left: -21px;
+  top: -21px;
+  width: 42px;
+  background-color: #316dc2;
+  padding: 10px 0;
+  text-align: center;
+}
+
+@include respond-to("tablet") {
+  .grand-wrapper {
+    width: 678px;
+    // margin: 0 auto;
+    padding: 100px 0 100px;
+    // color: #ffffff;
+    display: block;
+    // gap: 138px;
+  }
+
+  .grand-pass {
+    width: 498px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-family: "Manrope-Regular", "sans-serif";
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .grand-receive {
+    margin-top: 40px;
+    h3 {
+      margin-bottom: 35px;
+    }
+    .receive-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px 25px;
+      font-family: "Manrope-Regular", "sans-serif";
+      font-size: 16px;
+      line-height: 20px;
+      // padding-left: 20px;
+      // padding: 0;
+      margin: 0;
+
+      .receive-item {
+        width: 251px;
+        padding: 31px 26px 31px 26px;
+        border: 1px solid #f0efe9;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-bottom: 0;
+      }
+
+      .receive-item:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  // .custom-counter {
+  //   counter-reset: my-counter; /* Сброс счётчика */
+  //   //   list-style-type: none; /* Убираем стандартные маркеры */
+  // }
+
+  // .custom-counter li {
+  //   counter-increment: my-counter; /* Увеличиваем счётчик для каждого элемента списка */
+  //   position: relative;
+  // }
+
+  .custom-counter li::before {
+    content: counter(my-counter) " "; /* Отображаем номер без точки */
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    left: -21px;
+    top: -21px;
+    width: 42px;
+    background-color: #316dc2;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+@include respond-to("mobile") {
+  .grand-wrapper {
+    width: 290px;
+    // margin: 0 auto;
+    padding: 70px 0;
+    // color: #ffffff;
+    display: block;
+    // gap: 138px;
+  }
+
+  .grand-pass {
+    width: 290px;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-family: "Manrope-Regular", "sans-serif";
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 30px;
+      width: 290px;
+    }
+  }
+
+  .grand-receive {
+    margin-top: 37px;
+    h3 {
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 21px;
+      width: 210px;
+    }
+    .receive-list {
+      display: flex;
+      flex-wrap: wrap;
+      // gap: 15px;
+      row-gap: 15px;
+      font-family: "Manrope-Regular", "sans-serif";
+      font-size: 14px;
+      line-height: 20px;
+      // padding-left: 20px;
+      // padding: 0;
+      margin: 0;
+
+      .receive-item {
+        width: 251px;
+        padding: 24px 24px 24px 25px;
+        // border: 1px solid #f0efe9;
+        border-radius: 16px;
+        margin-left: 15px;
+        margin-bottom: 0;
+      }
+
+      .receive-item:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  // .custom-counter {
+  //   counter-reset: my-counter; /* Сброс счётчика */
+  //   //   list-style-type: none; /* Убираем стандартные маркеры */
+  // }
+
+  // .custom-counter li {
+  //   counter-increment: my-counter; /* Увеличиваем счётчик для каждого элемента списка */
+  //   position: relative;
+  // }
+
+  .custom-counter li::before {
+    content: counter(my-counter) " "; /* Отображаем номер без точки */
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: -21px;
+    top: -9px;
+    width: 42px;
+    background-color: #316dc2;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
